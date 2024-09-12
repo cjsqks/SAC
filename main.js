@@ -1,12 +1,7 @@
 ( function () {
 	const template = document.createElement('template')
-	template.innerHTML = '
-		<style>
-		</style>
-		<div id="root" style="width: 100%; height: 100%;">
-		Hello Custom Widget
-		</div>
-	'
+	
+	template.innerHTML = '<style></style><div id="root" style="width: 100%; height: 100%;">Hello Custom Widget</div>'
 
 	class Main extends HTMLElemnt{
 		constructor () {
