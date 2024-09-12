@@ -42,6 +42,12 @@ var parseMetadata = metadata =>{
   onCustomWidgetAfterUpdate(changedPorps){
   }
   onCustomWidgetDestroy(){
+   
+  }
+  setSeriesType(seriesType){
+   this.seriesType = seriesType
+   this.dispatchEvent(new CustomEvent('propertiesChanged', {detail:{properties:{seriesType}}}))
+   this.render()
   }
   async render(){
    const dataBinding = this.dataBinding
