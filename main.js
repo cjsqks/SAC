@@ -8,12 +8,22 @@
  </div>
  `
  class Main extends HTMLElement {
- constructor () {
- super()
- this._shadowRoot = this.attachShadow({ mode: 'open' })
- this._shadowRoot.appendChild(template.content.cloneNode(true))
- this._root = this._shadowRoot.getElementById('root')
- }
+  constructor () {
+   super()
+   this._shadowRoot = this.attachShadow({ mode: 'open' })
+   this._shadowRoot.appendChild(template.content.cloneNode(true))
+   this._root = this._shadowRoot.getElementById('root')
+  }
+  onCustomWidgetResize(width,height){
+   this.render()
+  }
+  onCustomWidgetAfterUpdate(changedPorps){
+  }
+  onCustomWidgetDestroy(){
+  }
+  render(){
+   this._root.textContent = `Hello Custom Widget clientWidth: ${this.clientWidth}, clientHeight: ${this.clientHeight}`
+  }
  }
  customElements.define('com-sap-sac-exercise-chj01-main', Main)
  })()
