@@ -14,5 +14,5 @@
 		}
 	}
 
-	customElements.define('com-sap-sac-exercise-chj99-main',Main)
+	customElements.define('com-sap-sac-exercise-chj99-main', Main)
 })()
