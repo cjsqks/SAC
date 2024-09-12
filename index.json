@@ -2,16 +2,16 @@
  "eula": "",
  "vendor": "SAP",
  "license": "",
- "id": "com.sap.sac.exercise.chj99",
+ "id": "com.sap.sac.exercise.chj01",
  "version": "1.0.0",
- "name": "Exercise-01",
+ "name": "Exercise-01-chj01",
  "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAzklEQVQ4jWNgoBAwkqLYOLGjguH//1RGxv+7z8yvymBgYGBgIcm2//8lGRgZlP7/Z5CDiTGRYgA2QLEBOL2gFVrPxsXDYcfAwMDw7cuPQ9dWN/4iyQBebi75vwz/dkPZagwMDLexqaOeF4wT2jcyMjL4Mfz/33tmQVUJsQYgueA/K4RmZCXFBQMfjQNvADwWGBkZHv3/z3CPgZHxOQMDAwPjv9/fGJiZ7sLZDAwM/xkZnzP8/3+PkZHhEaUWwwGjSWL7f0oMYGFgYFCmxAAACtUz95booNoAAAAASUVORK5CYII=",
  "newInstancePrefix": "ExerciseCustomWidget",
  "description": "커스텀 위젯 가이드 예시 01",
  "webcomponents": [
  {
  "kind": "main",
- "tag": "com-sap-sac-exercise-chj99-main",
+ "tag": "com-sap-sac-exercise-chj01-main",
  "url": "https://cjsqks.github.io/SAC/main.js",
  "integrity": "",
  "ignoreIntegrity": true
