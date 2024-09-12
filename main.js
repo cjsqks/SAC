@@ -42,7 +42,7 @@ var parseMetadata = metadata =>{
   onCustomWidgetAfterUpdate(changedPorps){
   }
   onCustomWidgetDestroy(){
-   
+   if(this._eChart && echarts){echarts.dispose(this._eChart)}
   }
   setSeriesType(seriesType){
    this.seriesType = seriesType
