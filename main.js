@@ -22,7 +22,11 @@
   onCustomWidgetDestroy(){
   }
   render(){
-   this._root.textContent = `Hello Custom Widget clientWidth: ${this.clientWidth}, clientHeight: ${this.clientHeight}`
+   const dataBinding = this.dataBinding
+   if(!dataBinding || dataBinding.state !== 'success'){
+    return
+   }
+   this._root.textContent = JSON.stringify(dataBinding)
   }
  }
  customElements.define('com-sap-sac-exercise-chj01-main', Main)
