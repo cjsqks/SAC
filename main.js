@@ -65,7 +65,7 @@ var parseMetadata = metadata =>{
      name: measure.label,
      data: [],
      key: measure.key,
-     type: 'line',
+     type: this.seriesType||'line',
      smooth: true
     }
    })
