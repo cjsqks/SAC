@@ -21,7 +21,7 @@
   }
   onCustomWidgetDestroy(){
   }
-  render(){
+  async render(){
    const dataBinding = this.dataBinding
    if(!dataBinding || dataBinding.state !== 'success'){
     return
