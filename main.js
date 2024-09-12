@@ -44,6 +44,9 @@ var parseMetadata = metadata =>{
   onCustomWidgetDestroy(){
    if(this._eChart && echarts){echarts.dispose(this._eChart)}
   }
+  getSeriesType(){
+   return this.seriesType
+  }
   setSeriesType(seriesType){
    this.seriesType = seriesType
    this.dispatchEvent(new CustomEvent('propertiesChanged', {detail:{properties:{seriesType}}}))
